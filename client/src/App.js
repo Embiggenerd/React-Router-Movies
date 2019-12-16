@@ -21,11 +21,11 @@ const App = () => {
     <div>
       <SavedList list={savedList} />
       <Switch>
-        <Route path="/movies">
-          <Movie/>
+        <Route path="/movies/:id">
+          <Movie></Movie>
         </Route>
-        <Route exact path="/">
-        <MovieList />
+        <Route path="/">
+          <MovieList />
         </Route>
       </Switch>
     </div>
